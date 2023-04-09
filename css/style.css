@@ -201,7 +201,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 10% 10% 4% 10%;
+  padding: 20% 10% 20% 10%;
   display: flex; /* add flex display */
   flex-direction: column; /* change flex direction to column */
 }
@@ -555,13 +555,13 @@ img#indeximg{
 
 .griddict {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   grid-gap: 20px;
-  width: 380px;
+  width: 100%;
   margin: auto;
 }
 
@@ -608,7 +608,7 @@ header p{
 @media (min-width: 481px) {
   .griddict {
     grid-template-columns: 1fr;
-    width: 380px;
+    width: 100%;;
     margin: auto;
   }
   header p{
@@ -619,7 +619,7 @@ header p{
 @media (min-width: 768px) {
   .griddict {
     grid-template-columns: repeat(2, 1fr);
-    width: 750px;
+    width: 100%;
     margin: auto;
   }
 }
@@ -627,7 +627,7 @@ header p{
 @media (min-width: 1025px) {
   .griddict {
     grid-template-columns: repeat(3, 1fr);
-    width: 1200px;
+    width: 100%;
     margin: auto;
   }
 }
